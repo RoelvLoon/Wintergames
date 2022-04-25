@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "whiteNTBold";
+    src: url(../../../style/White\ NT\ Bold.otf);
+}
+
+@font-face {
+    font-family: "futaraBold";
+    src: url(../../../style/FuturaBold.otf);
+}
+
+@font-face {
+    font-family: "futaraMedium";
+    src: url(../../../style/FuturaMedium.otf);
+}
+
+@font-face {
+    font-family: "bogart";
+    src: url(../../../style/Bogart-Alt-Extrabold-trial.ttf);
+}
+
+* {
+scroll-behavior: smooth;
+-webkit-tap-highlight-color: transparent;
+}
+
+body {
+margin: 0;
+font-family: "futaraMedium";
+background-color: rgb(238, 253, 255);
+height: 100vh;
+background-color: #537085;
+}
+
+p {
+    font-family: "futaraMedium";
+}
+
+h1 {
+    font-family: "whiteNTBold";
+    font-size: 40px;
+}
+
+.navMenuLink a{
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #9cc4e2;
+}
+
+.nav {
+width: 100%;
+background-color: #122939;
+display: grid;
+grid-template-areas: "box box";
+position: absolute;
+z-index: 1;
+box-shadow: 0 50px 50px 0 rgb(0 0 0 / 30%);
+}
+
+.navMenuLink {
+text-align: center;
+margin: auto;
+width: 500px;
+background-color: #122939;
+padding: 30px;
+transition: 0.5s;
+font-size: 17px;
+color: white;
+cursor: pointer;
+font-family: "futaraBold";
+}
+
+.navMenuLink:hover {
+text-align: center;
+margin: auto;
+width: 500px;
+background-color: #112531;
+padding: 30px;
+transition: 0.5s;
+font-size: 17px;
+color: white;
+cursor: pointer;
+}
+
+
+table {
+    font-family: "futaraMedium";
+    background-color: #122939;
+    color: #e7f0f7;
+    text-align: center;
+    border-spacing: 0px;
+    width: 300px;
+    margin: 50px;
+}
+
+td, th {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #1c3547;
+}
+
+tr:hover {
+    background-color: #274255;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
