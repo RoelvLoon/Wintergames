@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "whiteNTBold";
+    src: url(White\ NT\ Bold.otf);
+  }
+  
+  @font-face {
+      font-family: "futaraBold";
+      src: url(FuturaBold.otf);
+    }
+  
+  @font-face {
+      font-family: "futaraMedium";
+      src: url(FuturaMedium.otf);
+  }
+  
+  @font-face {
+      font-family: "bogart";
+      src: url(Bogart-Alt-Extrabold-trial.ttf);
+  }
+
+body{
+    margin: 0;
+}
+
+.main{
+    text-align: center;
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.snowman{
+    height: 600px;
+    width: auto;
+}
+
+.errtext{
+    font-family: "futaraBold";
+    font-weight: bold;
+    color: #0e1f29;
+}
+
+a{
+    font-family: "futaraBold";
+    font-weight: bold;
+    color: #0e1f29;
+    font-size: 20px;
+}
+
+.btnLink {
+    padding: 20px 40px;
+    width: 100px;
+    background-color: #8cb6ce;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #0a171f;
+    border-radius: 15px;
+    border-bottom: 8px solid #7ba0b6;
+    transition: 0.2s;
+  }
+  
+  .btnLink:hover {
+    padding: 27px 50px;
+    background-color: #95c0da;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #0a171f;
+    border-radius: 15px;
+    border-bottom: 0px solid #95c0da;
+    transition: 0.2s;
+  }
+
+  .buttons{
+    display: grid;
+    grid-template-areas: "box box";
+  }
+
+  .test{
+      padding: 0 5px;
+  }
+
+@media only screen and (max-width: 650px) {
+    .snowman{
+        height: 400px;
+    }
+
+    .errtext{
+        font-size: 20px;
+    }
+    
+    .btnLink {
+        padding: 20px 30px;
+        background-color: #8cb6ce;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        color: #0a171f;
+        border-radius: 15px;
+        border-bottom: 8px solid #7ba0b6;
+        transition: 0.2s;
+      }
+      
+      .btnLink:hover {
+        padding: 25px 30px;
+        background-color: #95c0da;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        color: #0a171f;
+        border-radius: 15px;
+        border-bottom: 0px solid #95c0da;
+        transition: 0.2s;
+      }
+    
+    
+}

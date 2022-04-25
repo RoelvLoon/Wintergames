@@ -1,0 +1,690 @@
+@font-face {
+  font-family: "whiteNTBold";
+  src: url(White\ NT\ Bold.otf);
+}
+
+@font-face {
+    font-family: "futaraBold";
+    src: url(FuturaBold.otf);
+  }
+
+@font-face {
+    font-family: "futaraMedium";
+    src: url(FuturaMedium.otf);
+}
+
+@font-face {
+    font-family: "bogart";
+    src: url(Bogart-Alt-Extrabold-trial.ttf);
+}
+
+* {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: "futaraBold";
+}
+
+p {
+    font-family: "futaraMedium";
+}
+
+h1 {
+    font-family: "whiteNTBold";
+    font-size: 40px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.frontpageDesign {
+    margin-top: 10rem;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "box box";
+    position: absolute;
+    overflow: hidden;
+}
+
+.frontpageLogo {
+    padding: 20vh 30px;
+}
+
+.frontpageSlogan {
+    padding: 25vh 30px;
+}
+
+.koptekstFrontpage {
+    margin-top: 10vh;
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 8px 24px black;
+}
+
+.nav {
+  width: 100%;
+  background-color: #122939;
+  display: grid;
+  grid-template-areas: "box box";
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 50px 50px 0 rgb(0 0 0 / 30%);
+}
+
+.navMenuLink {
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  background-color: #122939;
+  padding: 30px;
+  transition: 0.5s;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  font-family: "futaraBold";
+}
+
+.navMenuLink:hover {
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  background-color: #112531;
+  padding: 30px;
+  transition: 0.5s;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+
+.infoSlideQR {
+  background-color: #122939;
+  width: 0%;
+  min-height: 100vh;
+  color: white;
+  position: absolute;
+  opacity: 0%;
+  transition: 0.3s;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.infoSlideRes {
+  background-color: #122939;
+  width: 0%;
+  min-height: 100vh;
+  color: white;
+  position: absolute;
+  opacity: 0%;
+  transition: 0.3s;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 5vh;
+  right: 0;
+}
+
+.slideHouder {
+  display: grid;
+  grid-template-areas: "box box";
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.btnLink {
+  padding: 20px 50px;
+  background-color: #9cc4e2;
+  text-align: center;
+  margin: auto;
+  margin-top: 30vh;
+  display: inline-block;
+  text-decoration: none;
+  color: #1a3141;
+  border-radius: 15px;
+  border-bottom: 8px solid #7ba0b6;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: "futaraBold";
+}
+
+.btnLink:hover {
+  padding: 30px 50px;
+  background-color: #95c0da;
+  text-align: center;
+  margin: auto;
+  margin-top: 30vh;
+  display: inline-block;
+  text-decoration: none;
+  color: #112531;
+  border-radius: 15px;
+  border-bottom: 0px solid #95c0da;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.infoTerugQR {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../media/pointer.png");
+  background-position: center;
+  background-size: cover;
+  margin: 20vh auto;
+  transition: 0.3s;
+  transform: rotate(-90deg);
+}
+
+.infoTerugQR:hover {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-image: url("../media/pointer.png");
+  background-position: center;
+  background-size: cover;
+  margin: 20vh auto;
+  transition: 0.3s;
+  transform: rotate(90deg);
+}
+
+.infoTerugRes {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-image: url("../media/pointer.png");
+  background-position: right;
+  background-size: cover;
+  display: block;
+}
+
+.vraagQR {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background-image: url("../media/vraag.png");
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin: 20vh auto;
+  transition: 0.2s;
+  display: none;
+}
+
+.vraagQR:hover {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background-image: url("../media/vraag.png");
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin: 20vh auto;
+  transition: 0.2s;
+}
+
+.voorPaginaInhoud {
+  background-color: #9cc4e2;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-image: url("../media/achtergrond.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.onderPagina {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.voorPaginaInhoud p {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../media/pointer.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.evenementInfo {
+  background-color: rgb(238, 253, 255);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.inhoudEvenementInfo {
+  padding: 30vh 0;
+}
+
+.bannerInfoPage {
+    background: url('../media/banner.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: none;
+    
+}
+
+/* Hier heeft Roel gewerkt */
+
+#overlay {
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    background-image: url("../media/snow.gif");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#Cross{
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(212, 14, 14);
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: 0.2s;
+}
+
+#Cross:hover{
+    color: rgb(255, 0, 0);
+}
+
+#qrpopup{
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 600px;
+    height: 600px;
+    background-color: #e7f0f7;
+    z-index: 4;
+    border-radius: 15px;
+    font-family: "bogart";
+}
+
+#qr{
+    width: 250px;
+    height: 250px;
+    z-index: 5;
+    border-radius: 15px;
+}
+
+.downloadButton {
+    margin: auto;
+    padding: 20px 50px;
+    background-color: #9cc4e2;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #112531;
+    border-radius: 15px;
+    border-bottom: 8px solid #7ba0b6;
+    transition: 0.2s;
+    font-family: "futaraBold";
+  }
+  
+  .downloadButton:hover {
+    margin: auto;
+    padding: 30px 50px;
+    background-color: #95c0da;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #112531;
+    border-radius: 15px;
+    border-bottom: 0px solid #95c0da;
+    transition: 0.2s;
+  }
+  
+  #qrText{
+      font-size: 30px;
+      font-family: "futaraBold";
+      margin: 20px;
+  }
+
+  #buttonClass{
+    z-index: 5;
+    height: 100px;
+  }
+
+  #page{
+    background-image: url("../media/achtergrond.jpg");
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup{
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color: #e7f0f7;
+    z-index: 4;
+    border-radius: 15px;
+    font-family: "bogart";
+}
+
+input{
+    border: 0px;
+    border-radius: 10px;
+}
+
+#inlogText{
+    font-family: "futaraBold";
+    
+}
+
+#inlogButton{
+    margin-top: 40px;
+}
+
+.inlog{
+    text-align: center;
+    height: 30px;
+}
+
+.message{
+    color: red;
+}
+
+
+/* Hier stopt Roel */
+
+@media only screen and (max-width: 1150px) {
+  .navMenuLink {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    background-color: #122939;
+    padding: 30px 0;
+  }
+
+  .navMenuLink:hover {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    background-color: #112531;
+    padding: 30px 0;
+    transition: 0.5s;
+    font-size: 17px;
+    color: white;
+  }
+
+  .infoInhoud {
+    height: 200px;
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  .infoInhoud a {
+    margin: 500px 0px;
+  }
+
+  .omschrijvingQR {
+    margin: auto;
+    height: 300px;
+    text-align: left;
+    padding: 0px 40px;
+  }
+
+  .omschrijvingRes {
+    margin: auto;
+    height: 300px;
+    text-align: right;
+    padding: 0px 40px;
+  }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .navMenuLink {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        background-color: #122939;
+        padding: 30px 0;
+    }
+
+    .navMenuLink:hover {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        background-color: #112531;
+        padding: 30px 0;
+        transition: 0.5s;
+        font-size: 17px;
+        color: white;
+    }
+
+    .infoInhoud {
+        height: 200px;
+        padding-top: 275px;
+        text-align: center;
+    }
+
+    .infoInhoud a {
+        margin: 400px 0px;
+    }
+
+    .omschrijvingQR {
+        margin: auto;
+        height: 300px;
+        text-align: left;
+        padding: 0px 40px;
+        display: none;
+    }
+
+    .omschrijvingRes {
+        margin: auto;
+        height: 300px;
+        text-align: right;
+        padding: 0px 40px;
+        display: none;
+    }
+
+    #qrpopup{
+        margin-top: 100px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        height: 600px;
+        background-color: #e7f0f7;
+        z-index: 4;
+        border-radius: 15px;
+    }
+
+    #Cross{
+        cursor: pointer;
+        font-size: 40px;
+        color: rgb(212, 14, 14);
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    #qr{
+        width: 250px;
+        height: 250px;
+        z-index: 5;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .navMenuLink {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        background-color: #122939;
+        padding: 30px 0;
+    }
+
+    .navMenuLink:hover {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        background-color: #112531;
+        padding: 30px 0;
+    }
+
+    .infoInhoud {
+        height: 200px;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .infoInhoud a {
+        margin: 300px 0px;
+    }
+
+    .omschrijvingQR {
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+        display: block;
+    }
+
+    .omschrijvingRes {
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+        display: block;
+    }
+
+    #overlay {
+        position: fixed;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 3;
+        background-image: url("../media/snow.gif");
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    
+
+    #qrpopup{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+        background-color: #e7f0f7;
+        z-index: 4;
+        border-radius: 15px;
+    }
+
+    #Cross{
+        cursor: pointer;
+        font-size: 30px;
+        color: rgb(212, 14, 14);
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    #qr{
+        width: 200px;
+        height: 200px;
+        z-index: 5;
+        border-radius: 15px;
+    }
+
+    #qrText{
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    .frontpageDesign {
+        margin-top: 10rem;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "box";
+        position: absolute;
+        overflow: hidden;
+    }
+    
+    .frontpageLogo {
+        padding: 10vh 30px;
+    }
+    
+    .frontpageSlogan {
+        padding: 20vh 30px;
+        display: none;
+    }
+    
+    .koptekstFrontpage {
+        margin-top: 10vh;
+    }
+}
+
+/* hier quinten */
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #122939;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: 20px;
+  }
+
+  /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

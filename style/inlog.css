@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "whiteNTBold";
+    src: url(White\ NT\ Bold.otf);
+  }
+  
+  @font-face {
+      font-family: "futaraBold";
+      src: url(FuturaBold.otf);
+    }
+  
+  @font-face {
+      font-family: "futaraMedium";
+      src: url(FuturaMedium.otf);
+  }
+  
+  @font-face {
+      font-family: "bogart";
+      src: url(Bogart-Alt-Extrabold-trial.ttf);
+  }
+  
+  * {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+body {
+    margin: 0;
+    font-family: "futaraBold";
+  }
+  
+  p {
+      font-family: "futaraMedium";
+  }
+  
+  h1 {
+      font-family: "whiteNTBold";
+      font-size: 40px;
+  }
+  
+
+.btnLink {
+    padding: 20px 50px;
+    background-color: #9cc4e2;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: #1a3141;
+    border-radius: 15px;
+    border-bottom: 8px solid #7ba0b6;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: "futaraBold";
+  }
+  
+  .btnLink:hover {
+    padding: 30px 50px;
+    background-color: #95c0da;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: #112531;
+    border-radius: 15px;
+    border-bottom: 0px solid #95c0da;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+#page{
+    background-image: url("../media/achtergrond.jpg");
+    background-size: cover;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup{
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color: #e7f0f7;
+    z-index: 4;
+    border-radius: 15px;
+    font-family: "bogart";
+}
+
+input{
+    border: 1px solid #7DA0B5;
+    border-radius: 10px;
+}
+
+#inlogText{
+    font-family: "futaraBold";
+    
+}
+
+#inlogButton{
+    margin-top: 40px;
+}
+
+.inlog{
+    text-align: center;
+    height: 30px;
+}
+
+.message{
+    color: red;
+}
